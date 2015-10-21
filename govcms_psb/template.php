@@ -127,3 +127,20 @@ function govcms_psb_preprocess_block(&$variables, $hook) {
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
 // */
+
+
+/**
+ * Implements hook_preprocess_file_entity
+ */
+function govcms_psb_preprocess_file_entity(&$variables) {
+  $view_mode = $variables['view_mode'];
+  $file = &$variables['content']['file']['#file'];
+
+  // We add a render element 'file_size' that we print in the
+  // file--document--teaser.tpl.php template file.
+  if ($view_mode === 'teaser' && isset($file->filesize)) {
+    $variables['content']['file_size'] = array(
+      '#markup' => format_size($file->filesize),
+    );
+  }
+}
