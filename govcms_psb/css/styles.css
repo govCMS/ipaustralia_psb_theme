@@ -1,4 +1,9 @@
 /*GLobal Styles */
-html, button, input, select, textarea {
+html {
     font-family: sans-serif;
+    background: #1e3048;
+}
+
+body {
+	min-height: 0%;
 }

@@ -15,6 +15,16 @@ body {
   text-shadow: none;
 }
 
+/*updates file icons to be inline with content and small amount of space around */
+img.file-icon {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+#content a {
+    color: #005fe0;
+}
+
 /* Background color and removes shadows */
 #page {
   background: #f7f7f7 url("../images/contents-bg.png") repeat;
