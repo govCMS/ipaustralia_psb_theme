@@ -67,10 +67,8 @@ function govcms_psb_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function govcms_psb_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
 
+function govcms_psb_preprocess_node(&$variables, $hook) {
   // Optionally, run node-type-specific preprocess functions, like
   // govcms_psb_preprocess_node_page() or
   // govcms_psb_preprocess_node_story().
@@ -79,7 +77,18 @@ function govcms_psb_preprocess_node(&$variables, $hook) {
     $function($variables, $hook);
   }
 }
-// */
+
+/**
+ * Implements hook_preprocess_node_form.
+ */
+function govcms_psb_preprocess_node_form(&$variables) {
+  if ($variables['view_mode'] === 'teaser'){
+    // Remove View more link.
+    unset($variables['content']['links']['node']['#links']['node-readmore']);
+  }
+}
+
+
 
 /**
  * Override or insert variables into the comment templates.
