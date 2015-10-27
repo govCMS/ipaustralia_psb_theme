@@ -76,6 +76,11 @@ function govcms_psb_preprocess_node(&$variables, $hook) {
   if (function_exists($function)) {
     $function($variables, $hook);
   }
+
+  // Add template suggestions based on view mode.
+  // Example, node--form--teaser.tpl.php.
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__' . $variables['view_mode'];
 }
 
 /**
