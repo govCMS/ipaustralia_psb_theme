@@ -93,6 +93,18 @@ function govcms_psb_preprocess_node_form(&$variables) {
   }
 }
 
+/**
+ * Implements hook_preprocess_node_form.
+ */
+function govcms_psb_preprocess_node_attorney(&$variables) {
+  // Replaceing the title with the Last name then First name.
+
+  $first_name = $variables['field_first_name'][0]['safe_value'];
+  $last_name = $variables['field_last_name'][0]['safe_value'];
+
+  $variables['title'] = $last_name . ', ' . $first_name;
+}
+
 
 
 /**
