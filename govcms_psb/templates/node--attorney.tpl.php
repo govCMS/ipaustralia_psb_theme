@@ -5,6 +5,8 @@
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728164
+ *
+ * This template was created to change the title and remove the first and last name from the render.
  */
 
 if (!isset($title_tag) || empty($title_tag)) :
@@ -18,7 +20,7 @@ endif;
     <header>
       <?php print render($title_prefix); ?>
       <?php if (!$page && $title): ?>
-        <<?php print $title_tag; ?><?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></<?php print $title_tag; ?>>
+        <<?php print $title_tag; ?><?php print $title_attributes; ?>><?php print $title; ?></<?php print $title_tag; ?>>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
@@ -39,6 +41,9 @@ endif;
   // We hide the comments and links now so that we can render them later.
   hide($content['comments']);
   hide($content['links']);
+  // The title has been replaced with last name then first name.
+  hide($content['field_first_name']);
+  hide($content['field_last_name']);
   print render($content);
   ?>
 
