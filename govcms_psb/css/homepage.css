@@ -14,26 +14,83 @@ body.front li {
     list-style: none;
 }
 
+#content a {
+    color: #005fe0;
+}
 
-
-.attorney h2, .attorney p, .attorney a{
+.attorney p {
 color: #9a6130;
 }
 
-.find  h2, .find p, .find a{
+.attorney a {
+color: #9a6130;
+font-size: 1.2em;
+}
+
+.attorney h2 {
+color: #9a6130 !important;
+    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+
+
+
+.find p {
 color: #2f5a94;
 }
 
-.registered h2, .registered p, .registered a{
-color: #5a4f8f;
+.find a {
+color: #2f5a94;
+font-size: 1.2em;
+}
 
+.find h2 {
+color: #2f5a94 !important;
+    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
 }
 
 
 
-.complaint h2, .complaint p, .complaint a  {
+.registered p {
+color: #5a4f8f;
+}
+
+.registered a {
+color: #5a4f8f;
+font-size: 1.2em;
+}
+
+.registered h2 {
+color: #5a4f8f !important;
+    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+
+.complaint p {
 color: #6a7b27;
 }
+
+.complaint a {
+color: #6a7b27;
+font-size: 1.2em;
+}
+
+.complaint h2 {
+color: #6a7b27 !important;
+    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+
+
 
 
 
@@ -54,8 +111,23 @@ color: #fff !important;
     border-radius: 7px;
     position: relative;
 	background: #9a6130;
+	margin-top:25px;
+	margin-bottom:20px;
 
 }
+
+.attorney-button:hover {
+  background: #b67339;
+}
+
+.find-button:hover {
+  background: #386bb1;
+}
+
+.complaint-button:hover {
+  background: #859b31;
+}
+
 .find-button {
 
 color: #fff !important;
@@ -72,7 +144,8 @@ color: #fff !important;
     border-radius: 7px;
     position: relative;
 	background: #2f5a94;
-	min-width:300px;
+	min-width:250px;
+	margin-top:25px;
 
 }
 .complaint-button {
@@ -91,6 +164,18 @@ color: #fff !important;
     border-radius: 7px;
     position: relative;
 	background: #6a7b27;
-	min-width:300px;
+	min-width:220px;
+	margin-top:25px;
 
+}
+
+
+
+
+#contents-inner .homepage-column {
+    float: left;
+    width: 31.22%;
+    margin: 0 0 0 1.05%;
+    padding: 0 0 0 1.05%;
+    background: url("../img/column-divider.png") no-repeat;
 }
