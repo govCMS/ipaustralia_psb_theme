@@ -29,13 +29,18 @@ font-size: 1.2em;
 
 .attorney h2 {
 color: #9a6130 !important;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: normal;
 	padding-bottom: 15px;
 	font-size: 1.5em;
 }
 
-
+.formtitle h2 {
+color: #1e3048 !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+	font-size: 1.7m;
+}
 
 .find p {
 color: #2f5a94;
@@ -48,7 +53,7 @@ font-size: 1.2em;
 
 .find h2 {
 color: #2f5a94 !important;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: normal;
 	padding-bottom: 15px;
 	font-size: 1.5em;
@@ -67,7 +72,7 @@ font-size: 1.2em;
 
 .registered h2 {
 color: #5a4f8f !important;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: normal;
 	padding-bottom: 15px;
 	font-size: 1.5em;
@@ -84,7 +89,7 @@ font-size: 1.2em;
 
 .complaint h2 {
 color: #6a7b27 !important;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: normal;
 	padding-bottom: 15px;
 	font-size: 1.5em;
@@ -102,7 +107,7 @@ color: #fff !important;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -116,17 +121,7 @@ color: #fff !important;
 
 }
 
-.attorney-button:hover {
-  background: #b67339;
-}
 
-.find-button:hover {
-  background: #386bb1;
-}
-
-.complaint-button:hover {
-  background: #859b31;
-}
 
 .find-button {
 
@@ -135,7 +130,7 @@ color: #fff !important;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -155,7 +150,7 @@ color: #fff !important;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
-    font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -169,8 +164,17 @@ color: #fff !important;
 
 }
 
+.attorney-button:hover {
+  background: #b67339;
+}
 
+.find-button:hover {
+  background: #386bb1;
+}
 
+.complaint-button:hover {
+  background: #859b31;
+}
 
 #contents-inner .homepage-column {
     float: left;
