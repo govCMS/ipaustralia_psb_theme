@@ -184,17 +184,17 @@ color: #fff !important;
   height: 64px;
 }
 #content .home-attorney-register .attorney > span:first-child {
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/attorney.png") no-repeat;
+  background: url("../images/attorney.png") no-repeat;
 }
 #content .home-registered-attorneys .registered > span:first-child {
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/find.png") no-repeat;
+  background: url("../images/find.png") no-repeat;
 }
 #content .home-attorney-search .find > span:first-child {
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/registered.png") no-repeat;
+  background: url("../images/registered.png") no-repeat;
 }
 #content .home-make-complaint .complaint > span:first-child {
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/complaint.png") no-repeat;
+  background: url("../images/complaint.png") no-repeat;
 }
 #content .home-forms-listing .formtitle > span:first-child {
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/form.png") no-repeat;
+  background: url("../images/form.png") no-repeat;
 }
