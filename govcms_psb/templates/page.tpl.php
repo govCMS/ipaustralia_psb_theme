@@ -49,6 +49,21 @@
 
   <div id="main">
 
+   <?php
+      // Render the sidebars to see if there's anything in them.
+      $sidebar_first  = render($page['sidebar_first']);
+      $sidebar_second = render($page['sidebar_second']);
+    ?>
+
+    <?php if ($sidebar_first): ?>
+      <aside class="sidebars" role="complementary">
+        <?php print $sidebar_first; ?>
+       
+      </aside>
+    <?php endif; ?>
+  
+  
+  
     <div id="content" class="column" role="main">
 
       <a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
@@ -71,13 +86,13 @@
 
     <?php
       // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
+    
       $sidebar_second = render($page['sidebar_second']);
     ?>
 
-    <?php if ($sidebar_first || $sidebar_second): ?>
+    <?php if ($sidebar_second): ?>
       <aside class="sidebars" role="complementary">
-        <?php print $sidebar_first; ?>
+       
         <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>

@@ -22,7 +22,7 @@ body.front li {
 color: #9a6130;
 }
 
-.attorney a {
+#content .attorney h2 a {
 color: #9a6130;
 font-size: 1.2em;
 }
@@ -34,6 +34,9 @@ color: #9a6130 !important;
 	padding-bottom: 15px;
 	font-size: 1.5em;
 }
+.attorney {
+background: url("/") no-repeat;
+{
 
 
 
@@ -45,7 +48,7 @@ color: #2f5a94;
 color: #2f5a94;
 font-size: 1.2em;
 }
-
+images/attorney.png
 .find h2 {
 color: #2f5a94 !important;
     font-family: "OxygenLight", Helvetica, Arial, Verdana, sans-serif;
@@ -179,3 +182,5 @@ color: #fff !important;
     padding: 0 0 0 1.05%;
     background: url("../img/column-divider.png") no-repeat;
 }
+
+
