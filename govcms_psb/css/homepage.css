@@ -1,5 +1,5 @@
 /*GLobal Styles */
-    
+
 body.front #content {
 width:100%;
 }
@@ -27,7 +27,7 @@ color: #9a6130;
 font-size: 1.2em;
 }
 
-.attorney h2 {
+.attorney h2, #content .attorney h2 a {
 color: #9a6130 !important;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
@@ -35,7 +35,7 @@ color: #9a6130 !important;
 	font-size: 1.5em;
 }
 
-.formtitle h2 {
+.formtitle h2, #content .formtitle h2 a {
 color: #1e3048 !important;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
@@ -51,7 +51,7 @@ color: #2f5a94;
 font-size: 1.2em;
 }
 
-.find h2 {
+.find h2, #content .find h2 a {
 color: #2f5a94 !important;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
@@ -70,7 +70,7 @@ color: #5a4f8f;
 font-size: 1.2em;
 }
 
-.registered h2 {
+.registered h2, #content .registered h2 a {
 color: #5a4f8f !important;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
@@ -87,7 +87,7 @@ color: #6a7b27;
 font-size: 1.2em;
 }
 
-.complaint h2 {
+.complaint h2, #content .complaint h2 a {
 color: #6a7b27 !important;
     font-family: Helvetica, sans-serif;
     font-weight: normal;
