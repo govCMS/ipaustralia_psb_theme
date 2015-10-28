@@ -27,21 +27,6 @@ color: #9a6130;
 font-size: 1.2em;
 }
 
-.attorney h2, #content .attorney h2 a {
-color: #9a6130 !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	padding-bottom: 15px;
-	font-size: 1.5em;
-}
-
-.formtitle h2, #content .formtitle h2 a {
-color: #1e3048 !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	font-size: 1.7m;
-}
-
 .find p {
 color: #2f5a94;
 }
@@ -50,15 +35,6 @@ color: #2f5a94;
 color: #2f5a94;
 font-size: 1.2em;
 }
-
-.find h2, #content .find h2 a {
-color: #2f5a94 !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	padding-bottom: 15px;
-	font-size: 1.5em;
-}
-
 
 
 .registered p {
@@ -70,14 +46,6 @@ color: #5a4f8f;
 font-size: 1.2em;
 }
 
-.registered h2, #content .registered h2 a {
-color: #5a4f8f !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	padding-bottom: 15px;
-	font-size: 1.5em;
-}
-
 .complaint p {
 color: #6a7b27;
 }
@@ -86,18 +54,6 @@ color: #6a7b27;
 color: #6a7b27;
 font-size: 1.2em;
 }
-
-.complaint h2, #content .complaint h2 a {
-color: #6a7b27 !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	padding-bottom: 15px;
-	font-size: 1.5em;
-}
-
-
-
-
 
 
 .attorney-button {
@@ -184,56 +140,61 @@ color: #fff !important;
     background: url("../img/column-divider.png") no-repeat;
 }
 
-#panels-ipe-paneid-41 .pane-1 .attorney > span:first-child {
+.homepage-pane {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  padding-bottom: 15px;
+ }
+
+ /* forms listing */
+ img.file-icon {
+   display: inline !important;
+ }
+ .home-forms-listing .file-icon {
+   display: inline !important;
+ }
+ .field-type-file a {
+   display:inline !important;
+ }
+/* make forms listing nice and succinct */
+#content .views-row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.view-content {
+  margin-top:5px;
+}
+.home-attorney-register p, .home-attorney-register h2 a {color: #9a6130 !important}
+.home-attorney-search p, .home-attorney-search h2 a {color: #2f5a94  !important}
+.home-make-complaint p, .home-make-complaint h2 a{color: #6a7b27 !important}
+.home-forms-listing p, .home-forms-listing h2 a{color: #1e3048 !important}
+.home-registered-attorneys p, .home-registered-attorneys h2, .home-registered-attorneys a {color:#5a4f8f !important}
+
+#content .home-forms-listing .formtitle > span:first-child,
+#content .home-attorney-register .attorney > span:first-child,
+#content .home-registered-attorneys .registered > span:first-child,
+#content .home-attorney-search .find > span:first-child,
+#content .home-make-complaint .complaint > span:first-child {
   position: relative;
   float:left;
-  top: 20px;
+  top: 25px;
   left: 0;
   display: block;
   width: 65px;
   height: 64px;
+}
+#content .home-attorney-register .attorney > span:first-child {
   background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/attorney.png") no-repeat;
 }
-#panels-ipe-paneid-46 .pane-2 .find > span:first-child {
-  position: relative;
-  float:left;
-  top: 20px;
-  left: 0;
-  display: block;
-  width: 65px;
-  height: 64px;
-  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/registered.png") no-repeat;
-}
-#panels-ipe-paneid-51 .pane-3 .registered > span:first-child {
-  position: relative;
-  float:left;
-  top: 20px;
-  left: 0;
-  display: block;
-  width: 65px;
-  height: 64px;
+#content .home-registered-attorneys .registered > span:first-child {
   background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/find.png") no-repeat;
 }
-#panels-ipe-paneid-56 .pane-4 .complaint > span:first-child {
-  position: relative;
-  float:left;
-  top: 20px;
-  left: 0;
-  display: block;
-  width: 65px;
-  height: 64px;
+#content .home-attorney-search .find > span:first-child {
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/registered.png") no-repeat;
+}
+#content .home-make-complaint .complaint > span:first-child {
   background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/complaint.png") no-repeat;
 }
-#panels-ipe-paneid-66 .pane-5 .formtitle > span:first-child {
-  position: relative;
-  float:left;
-  top: 20px;
-  left: 0;
-  display: inline-block;
-  width: 65px;
-  height: 64px;
+#content .home-forms-listing .formtitle > span:first-child {
   background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/form.png") no-repeat;
-}
-#panels-ipe-paneid-61 {
-  padding-top:27px;
 }
