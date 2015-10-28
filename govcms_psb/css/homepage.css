@@ -183,3 +183,57 @@ color: #fff !important;
     padding: 0 0 0 1.05%;
     background: url("../img/column-divider.png") no-repeat;
 }
+
+#panels-ipe-paneid-41 .pane-1 .attorney > span:first-child {
+  position: relative;
+  float:left;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 65px;
+  height: 64px;
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/attorney.png") no-repeat;
+}
+#panels-ipe-paneid-46 .pane-2 .find > span:first-child {
+  position: relative;
+  float:left;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 65px;
+  height: 64px;
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/registered.png") no-repeat;
+}
+#panels-ipe-paneid-51 .pane-3 .registered > span:first-child {
+  position: relative;
+  float:left;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 65px;
+  height: 64px;
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/find.png") no-repeat;
+}
+#panels-ipe-paneid-56 .pane-4 .complaint > span:first-child {
+  position: relative;
+  float:left;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 65px;
+  height: 64px;
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/complaint.png") no-repeat;
+}
+#panels-ipe-paneid-66 .pane-5 .formtitle > span:first-child {
+  position: relative;
+  float:left;
+  top: 20px;
+  left: 0;
+  display: inline-block;
+  width: 65px;
+  height: 64px;
+  background: url("/sites/all/themes/ipaustralia_psb_theme/govcms_psb/images/form.png") no-repeat;
+}
+#panels-ipe-paneid-61 {
+  padding-top:27px;
+}
