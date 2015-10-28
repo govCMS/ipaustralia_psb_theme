@@ -11,30 +11,9 @@
 <header class="header" id="header" role="banner">
   <div class="header__inner">
 
-    <?php if ($secondary_menu): ?>
-      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array(
-              'links',
-              'inlineLinks--bordered--double',
-              'clearfix',
-            ),
-          ),
-          'heading' => array(
-            'text' => isset($secondary_menu_heading) ? $secondary_menu_heading : '',
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
-
     <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Australian Government - Professional Standards Board for Patent and Trade Marks Attorneys'); ?>" class="header__logo-image" /></a>
-  <?php endif; ?>
-
+    <?php endif; ?>
   <?php print render($page['header']); ?>
   </div>
 </header>
@@ -48,6 +27,17 @@
   <?php print $breadcrumb; ?>
 
   <div id="main">
+
+    <?php
+      // Render the sidebars to see if there's anything in them.
+      $sidebar_first  = render($page['sidebar_first']);
+    ?>
+
+    <?php if ($sidebar_first): ?>
+      <aside class="sidebars" role="complementary">
+        <?php print $sidebar_first; ?>
+      </aside>
+    <?php endif; ?>
 
     <div id="content" class="column" role="main">
 
@@ -71,13 +61,11 @@
 
     <?php
       // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
       $sidebar_second = render($page['sidebar_second']);
     ?>
 
-    <?php if ($sidebar_first || $sidebar_second): ?>
+    <?php if ($sidebar_second): ?>
       <aside class="sidebars" role="complementary">
-        <?php print $sidebar_first; ?>
         <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>
