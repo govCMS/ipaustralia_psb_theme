@@ -79,3 +79,53 @@ tr.alt {background: #e1e1e1;}
   width: 16px;
   height: 15px;
 }
+
+.listen-page:before {
+  margin-right: 10px;
+  display: inline-block;
+  content: '';
+  background: url("../images/speaker.png") no-repeat right;
+  width: 16px;
+  height: 15px;
+}
+
+.section-complaints h1, .section-complaints h2, .section-complaints h3, .section-complaints .sidebar .block .block__title {
+  color:#6a7b27;
+}
+
+.section-registered-attorneys h1, .section-registered-attorneys h2, .section-registered-attorneys h3, .section-registered-attorneys .sidebar .block .block__title {
+  color:#5a4f8f;
+}
+
+.section-about-us h1, .section-about-us h2, .section-about-us h3, .section-about-us .sidebar .block .block__title {
+  color:#000;
+}
+
+.section-attorney-registration h1, .section-attorney-registration h2, .section-attorney-registration h3, .section-attorney-registration .sidebar .block .block__title {
+  color:#9a6130;
+}
+
+.active-trail .complaints, .complaints:hover {
+  color:#fff !important;
+  background:#6a7b27 !important;
+}
+
+.active-trail .registered-attorneys, .registered-attorneys:hover {
+  color:#fff !important;
+  background:#5a4f8f !important;
+}
+
+.active-trail .about-us, .about-us:hover {
+  color:#fff !important;
+  background:#000 !important;
+}
+
+.active-trail .attorney-registration, .attorney-registration:hover  {
+  color:#fff !important;
+  background:#9a6130 !important;
+}
+
+.active-trail .forms-title, .forms-title:hover {
+  color:#fff !important;
+  background:#1e3048 !important;  
+}
