@@ -9,13 +9,13 @@ body {
 }
 
 .region-sidebar-first {
-    width: 280px;
+    width: 250px;
     float: left;
 
 }
 
 .menu-block-wrapper {
-font-size:1.2em;
+font-size:1.1em;
 color:#1e3048;
 }
 
@@ -27,6 +27,7 @@ a.menu__link {
     font-family: Helvetica, Arial, Verdana, sans-serif;
     text-decoration: none;
     display: block;
+	font-weight:normal;
 }
 
 #block-menu-menu-quick-links ul a, .menu-block-govcms_menu_block-sidebar .menu a {
@@ -40,4 +41,30 @@ a.menu__link {
 }
 .menu-block-wrapper.menu-block-govcms_menu_block-sidebar.menu-name-main-menu.parent-mlid-0.menu-level-2 {
     margin-left: -30px;
+}
+
+
+.menu-block-govcms_menu_block-sidebar .menu > li > a:hover {
+    background:#e2e9f3 !important;
+	color: #1e3048 !important;
+}
+.menu-block-govcms_menu_block-sidebar .menu > li > a {
+min-width:240px;
+}
+
+.sidebar .block .block__title {
+    font-size: 1.5em;
+    line-height: 2.275em;
+    color: #1e3048;
+    padding: 0 0 0 20px;
+    padding-top: 20px;
+	margin-left: -5px;
+}
+
+.sidebar .block .block__title {
+    background: #f3f3f3 !important;
+}
+
+.sidebar .block .block__content {
+    margin-top: -22px;
 }
