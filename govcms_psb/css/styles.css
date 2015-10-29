@@ -68,3 +68,11 @@ min-width:240px;
 .sidebar .block .block__content {
     margin-top: -22px;
 }
+
+.region-navigation .block__content > .menu > li {
+    width: 20%;
+}
+
+.region-navigation .block__content > .menu > li > a {
+    text-align: center;
+}
