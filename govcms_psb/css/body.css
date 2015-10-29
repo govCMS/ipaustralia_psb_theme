@@ -58,8 +58,17 @@ tr.alt {background: #e1e1e1;}
 }
 
 /*Print Icon*/
+
 .print-page {
   cursor: pointer;
+}
+
+.action-buttons{
+  float:right;
+}
+.print-page-wrapper, .listen-page-wrapper {
+  float:left;
+  padding-left:25px;
 }
 
 .print-page:before {

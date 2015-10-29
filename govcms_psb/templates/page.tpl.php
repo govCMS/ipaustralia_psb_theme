@@ -26,11 +26,16 @@
 
   <?php print $breadcrumb; ?>
 
-  <div class="action-buttons">
-    <div class="print-page-wrapper">
-      <a class="print-page">Print this page</a>
+  <?php if (!($is_front)): ?>
+    <div class="action-buttons">
+      <div class="listen-page-wrapper">
+        Listen to this page
+      </div>
+      <div class="print-page-wrapper">
+        <a class="print-page">Print this page</a>
+      </div>
     </div>
-  </div>
+  <?php endif; ?>
 
   <div id="main">
 
