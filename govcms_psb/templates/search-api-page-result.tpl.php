@@ -49,11 +49,8 @@
     <?php if ($snippet) : ?>
       <p class="search-snippet"><?php print $snippet; ?></p>
     <?php endif; ?>
-    <?php if ($info) : ?>
-      <p class="search-info"><?php print $info; ?></p>
-    <?php endif; ?>
     <?php if ($url) : ?>
-      <p class="search-info"><a href="<?php $url['path'] ?>"><?php print $url['path']; ?></a></p>
+      <p class="search-info"><?php $link_path = url($url['path'],array('absolute' => TRUE)); print l($link_path, $link_path);?></p>
     <?php endif; ?>
   </div>
 </li>
