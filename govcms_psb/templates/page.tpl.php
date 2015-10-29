@@ -57,6 +57,9 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+      <?php if (!($is_front)): ?>
+      <a href="#" id="skip-content-top" class="return-top">Go to top of page</a>
+      <?php endif; ?>
     </div>
 
     <?php

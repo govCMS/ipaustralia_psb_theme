@@ -39,3 +39,20 @@ table {margin: 1em 0; border-spacing: 1;border: #666 2px solid;}
 #page table {width: 100%;}
 td, th {padding: 5px 2%; word-wrap: break-word; text-align: left; color: #666; border: #666 2px solid;}
 tr.alt {background: #e1e1e1;}
+
+/* top of page link styles */
+#content .return-top, #content .return-top a {
+  clear: right;
+  float: right;
+  margin: 16px 0 24px;
+}
+#content .return-top, #content .return-top a {
+  padding: 0 50px 0 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #1e3048;
+  background: url("../images/psb-top.png") no-repeat right;
+  min-height: 21px;
+  line-height: 21px;
+}
