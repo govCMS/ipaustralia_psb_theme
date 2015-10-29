@@ -22,10 +22,6 @@ body.front li {
 color: #9a6130;
 }
 
-#content .attorney h2 a {
-color: #9a6130;
-font-size: 1.2em;
-}
 
 
 .attorney h2, #content .attorney h2 a {
@@ -39,12 +35,7 @@ color: #9a6130 !important;
 background: url("/") no-repeat;
 {
 
-.formtitle h2, #content .formtitle h2 a {
-color: #1e3048 !important;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-	font-size: 1.7m;
-}
+
 
 
 
