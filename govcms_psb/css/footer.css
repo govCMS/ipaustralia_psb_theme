@@ -16,3 +16,7 @@
 #footer a {
     color: white;
 }
+
+#footer a.menu__link {
+	border-top: none;
+}
