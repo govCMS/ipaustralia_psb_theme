@@ -28,7 +28,7 @@ img.file-icon {
 
 /* Background color and removes shadows */
 #page {
-  background: #f7f7f7 url("../images/contents-bg.png") repeat;
+  background: #f7f7f7;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
