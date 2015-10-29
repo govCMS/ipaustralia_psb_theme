@@ -70,7 +70,7 @@ stylesheets[all][] = css/homepage.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = js/script.js
 
 
 

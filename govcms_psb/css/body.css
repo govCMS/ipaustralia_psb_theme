@@ -56,3 +56,17 @@ tr.alt {background: #e1e1e1;}
   min-height: 21px;
   line-height: 21px;
 }
+
+/*Print Icon*/
+.print-page {
+  cursor: pointer;
+}
+
+.print-page:before {
+  margin-right: 10px;
+  display: inline-block;
+  content: '';
+  background: url("../images/psb-print.png") no-repeat right;
+  width: 16px;
+  height: 15px;
+}
