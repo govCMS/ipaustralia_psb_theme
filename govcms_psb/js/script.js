@@ -12,15 +12,16 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+// Print the page when you click on the print-page link.
+Drupal.behaviors.printPage = {
   attach: function(context, settings) {
-
-    // Place your code here.
-
+    $('.print-page').once('printPage', function() {
+      $this = $(this);
+      $this.click(function(){
+        window.print();
+      });
+    });
   }
 };
-
 
 })(jQuery, Drupal, this, this.document);
