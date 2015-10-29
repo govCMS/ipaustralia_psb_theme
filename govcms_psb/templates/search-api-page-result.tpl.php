@@ -52,5 +52,8 @@
     <?php if ($info) : ?>
       <p class="search-info"><?php print $info; ?></p>
     <?php endif; ?>
+    <?php if ($url) : ?>
+      <p class="search-info"><a href="<?php $url['path'] ?>"><?php print $url['path']; ?></a></p>
+    <?php endif; ?>
   </div>
 </li>
