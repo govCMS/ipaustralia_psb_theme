@@ -22,10 +22,31 @@ body.front li {
 color: #9a6130;
 }
 
-.attorney a {
+#content .attorney h2 a {
 color: #9a6130;
 font-size: 1.2em;
 }
+
+
+.attorney h2, #content .attorney h2 a {
+color: #9a6130 !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+.attorney {
+background: url("/") no-repeat;
+{
+
+.formtitle h2, #content .formtitle h2 a {
+color: #1e3048 !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+	font-size: 1.7m;
+}
+
+
 
 .find p {
 color: #2f5a94;
@@ -35,6 +56,16 @@ color: #2f5a94;
 color: #2f5a94;
 font-size: 1.2em;
 }
+
+
+.find h2, #content .find h2 a {
+	color: #2f5a94 !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+	padding-bottom: 15px;
+	font-size: 1.5em;
+}
+
 
 
 .registered p {
