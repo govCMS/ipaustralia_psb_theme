@@ -29,7 +29,7 @@
   <div class="action-buttons">
     <div class="print-page-wrapper">
       <a class="print-page">Print this page</a>
-    <div>
+    </div>
   </div>
 
   <div id="main">
