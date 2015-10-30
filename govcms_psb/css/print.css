@@ -1,0 +1,33 @@
+@media print {
+
+.action-buttons, .header__region{
+  display:none;
+}
+
+p,h1,h2,h3,a{
+  color:#000 !important;
+}
+
+.printy {
+  display:block;
+  content:url("../images/logo-print.png");
+  max-height:60px;
+}
+
+#logo img, .bottom-action-buttons {
+  display:none;
+}
+
+/*
+#logo:after {
+  background:url('../images/logo-print.png');
+  background-size: 250px 100px;
+      width: 400px;
+      height: 250px;
+      content:url(../images/logo-print.png);
+}
+*/
+
+
+
+}
