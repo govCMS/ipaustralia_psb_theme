@@ -13,6 +13,7 @@
 
     <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Australian Government - Professional Standards Board for Patent and Trade Marks Attorneys'); ?>" class="header__logo-image" /></a>
+        <span class="printy"></span>
     <?php endif; ?>
   <?php print render($page['header']); ?>
   </div>
@@ -46,12 +47,13 @@
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
     ?>
-
+    <div class="snav-top-wrapper">
     <?php if ($sidebar_first): ?>
       <aside class="sidebars" role="complementary">
         <?php print $sidebar_first; ?>
       </aside>
     <?php endif; ?>
+  </div>
 
     <div id="content" class="column" role="main">
 
@@ -73,13 +75,21 @@
       <?php print $feed_icons; ?>
       <?php if (!($is_front)): ?>
       <div class="bottom-action-buttons">
-        
+
         <div class="return-wrapper">
       <a href="#" id="skip-content-top" class="return-top">Go to top of page</a>
       </div>
     </div>
       <?php endif; ?>
     </div>
+
+    <div class="snav-bottom-wrapper">
+    <?php if ($sidebar_first): ?>
+      <aside class="sidebars" role="complementary">
+        <?php print $sidebar_first; ?>
+      </aside>
+    <?php endif; ?>
+  </div>
 
     <?php
       // Render the sidebars to see if there's anything in them.
