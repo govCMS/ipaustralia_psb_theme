@@ -105,6 +105,27 @@ function govcms_psb_preprocess_node_attorney(&$variables) {
   $variables['title'] = $last_name . ', ' . $first_name;
 }
 
+/**
+ * Implements hook_preprocess_node_form.
+ */
+function govcms_psb_preprocess_node_page(&$variables) {
+  if ($variables['view_mode'] === 'full'){
+    // Adding a render element for last changed date.
+    $formatted_changed_date = date('d/m/Y', $variables['changed']);
+
+    $variables['content']['last_changed'] = array(
+      '#type' => 'container',
+      '#weight' => 10,
+      '#attributes' => array(
+        'class' => array('last-updated-wrapper'),
+      ),
+      'last_changed_date' => array(
+        '#markup' => t('Last updated: @changed', array('@changed' => $formatted_changed_date)),
+      ),
+    );
+  }
+}
+
 
 
 /**
