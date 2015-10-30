@@ -28,7 +28,7 @@ img.file-icon {
 
 /* Background color and removes shadows */
 #page {
-  background: #f7f7f7;
+  background: #f3f3f3;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -57,15 +57,22 @@ tr.alt {background: #e1e1e1;}
   line-height: 21px;
 }
 
+.last-updated-wrapper {
+  float:left;
+  font-style: italic;
+}
+
 /*Print Icon*/
 
 .print-page {
   cursor: pointer;
+  text-decoration:underline;
 }
 
 .action-buttons{
   float:right;
 }
+
 .print-page-wrapper, .listen-page-wrapper {
   float:left;
   padding-left:25px;
@@ -127,5 +134,8 @@ tr.alt {background: #e1e1e1;}
 
 .active-trail .forms-title, .forms-title:hover {
   color:#fff !important;
-  background:#1e3048 !important;  
+  background:#1e3048 !important;
+}
+#logo img {
+  max-height:100px;
 }
