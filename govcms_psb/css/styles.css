@@ -76,3 +76,26 @@ min-width:240px;
 .region-navigation .block__content > .menu > li > a {
     text-align: center;
 }
+
+@media screen and (max-width: 768px){
+    .region-navigation .block__content > .menu {
+        display: block;
+        font-size: 1em;
+    }
+    .region-navigation .block__content > .menu > li {
+        width: 50%;
+    }
+
+    #block-search-api-page-default-search {
+        top:120px;
+    }
+}
+@media screen and (max-width: 900px){
+    .region-navigation .block__content > .menu {
+        font-size: .8em;
+    }
+}
+
+#header{
+    min-height: 152px;
+}
