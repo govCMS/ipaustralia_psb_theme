@@ -43,9 +43,12 @@ color: #5a4f8f;
 
 .registered a {
 color: #5a4f8f;
-font-size: 1.2em;
+font-size:1.2em;
 }
 
+.registered ul li a, p{
+  font-size:1.1em !important;
+}
 .complaint p {
 color: #6a7b27;
 }
@@ -194,6 +197,13 @@ color: #fff !important;
 }
 #content .home-make-complaint .complaint > span:first-child {
   background: url("../images/complaint.png") no-repeat;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        left:-20px;
 }
 #content .home-forms-listing .formtitle > span:first-child {
   background: url("../images/form.png") no-repeat;

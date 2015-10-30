@@ -29,7 +29,10 @@
   <?php if (!($is_front)): ?>
     <div class="action-buttons">
       <div class="listen-page-wrapper">
+        <a class="rsbtn_play same-window" accesskey="L" title="Listen to this page using ReadSpeaker" href="http://app.as.readspeaker.com/cgi-bin/rsent?customerid=6064&amp;lang=en_au&amp;wmode=transparent&amp;readid=rs-content&amp;url=<?php print url(current_path(), array('absolute' => TRUE)); ?>" onclick="readpage(this.href, 'xp1'); return false;" data-rsevent-id="rs_26263">
         <div class="listen-page">Listen to this page</div>
+      </a>
+
       </div>
       <div class="print-page-wrapper">
         <a class="print-page">Print this page</a>
@@ -69,7 +72,13 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
       <?php if (!($is_front)): ?>
+      <div class="bottom-action-buttons">
+        <div class="last-updated-wrapper">
+        </div>
+        <div class="return-wrapper">
       <a href="#" id="skip-content-top" class="return-top">Go to top of page</a>
+      </div>
+    </div>
       <?php endif; ?>
     </div>
 
