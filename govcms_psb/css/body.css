@@ -168,7 +168,12 @@ display:block;
 .action-buttons, .bottom-action-buttons {
   display:none;
 }
-
+.panel-3col-33 .panel-col-first, .panel-3col-33 .panel-col, .panel-3col-33 .panel-col-last {
+  width:100%;
+}
+p {
+  padding-top:25px;
+}
 .header__logo {
   max-width:100%;
 }

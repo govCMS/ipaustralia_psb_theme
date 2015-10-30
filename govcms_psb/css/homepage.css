@@ -62,7 +62,7 @@ font-size: 1.2em;
 .attorney-button {
 
 color: #fff !important;
-    width: 180px;
+    width: 200px;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
@@ -85,7 +85,7 @@ color: #fff !important;
 .find-button {
 
 color: #fff !important;
-    width: 180px;
+    width: 200px;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
@@ -98,14 +98,13 @@ color: #fff !important;
     border-radius: 7px;
     position: relative;
 	background: #2f5a94;
-	min-width:250px;
 	margin-top:25px;
 
 }
 .complaint-button {
 
 color: #fff !important;
-    width: 180px;
+    width: 200px;
     display: block;
     padding: 9px 24px;
     font-size: 1.5em;
@@ -118,7 +117,6 @@ color: #fff !important;
     border-radius: 7px;
     position: relative;
 	background: #6a7b27;
-	min-width:220px;
 	margin-top:25px;
 
 }
