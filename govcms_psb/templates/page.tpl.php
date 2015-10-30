@@ -73,8 +73,7 @@
       <?php print $feed_icons; ?>
       <?php if (!($is_front)): ?>
       <div class="bottom-action-buttons">
-        <div class="last-updated-wrapper">
-        </div>
+        
         <div class="return-wrapper">
       <a href="#" id="skip-content-top" class="return-top">Go to top of page</a>
       </div>
