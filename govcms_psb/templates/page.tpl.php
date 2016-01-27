@@ -108,4 +108,20 @@
 
 <?php print render($page['footer']); ?>
 
+<!-- Survey for PSB user research -->
+<script type="text/javascript" src="https://fluidsurveys-com.fs.cm/media/static/survey-prompts.js?"></script>
+<script type="text/javascript">
+var FSPROMPT = new SurveyPrompt({
+id: 12630,
+href: "http://fluidsurveys.com/s/ipaustralia/psb/prompt/12630/",
+"$": jQuery,
+cookie: 'FSPrompt-12630'
+}).setup();
+jQuery.noConflict(true);
+</script>
+
 <?php print render($page['bottom']); ?>
+
+
+
+
